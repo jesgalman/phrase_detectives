@@ -1,0 +1,122 @@
+
+
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>My Page</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="cordova-2.4.0.js"></script>
+    <script src="js/vaccines.js"></script>
+    <script src="js/cartillas.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+    <script src="js/jquery.mobile-1.2.0.min.js"></script>
+
+    <style type="text/css">
+        body #loggin {
+            background: url("img/login2_ipad.png") 0 0 no-repeat fixed !important;;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background-size:contain;
+
+        }
+        body #main_menu {
+            background: url("img/menu3_ipad.png") 0 0 no-repeat fixed !important;;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background-size:contain;
+        }
+        .ui-content{
+            background: transparent;
+        }
+    </style>
+
+    <!-- Calendar Script and sample function -->
+       
+
+</head> 
+<body onload=""> 
+
+
+<!-- page Login -->
+<div data-role="page" id="loggin">
+
+    <div data-role="header">
+        
+    </div><!-- /header -->
+
+    <div data-role="content">   
+        <div id="loggin_screen">
+    
+             <form action="" method="post">
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username"  placeholder="Username"/>
+                </div>
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password"  placeholder="Password"/>
+                </div>
+               
+            <div id="loggin_buttons">
+                <a href="#" data-role="button" data-transition="slidedown" data-icon="forward" data-inline="true">New Player?</a>
+                <a href="#main_menu" data-role="button" data-transition="slidedown" data-theme="b" data-icon="check" data-inline="true">Sign in</a>
+                
+            </div>
+            </form>
+
+        </div>
+    </div><!-- /content --> 
+
+    <div data-role="footer" data-position="fixed">        
+        
+    </div><!-- /footer -->
+
+</div><!-- /page Login-->
+
+
+<!-- page main_menu -->
+<div data-role="page" id="main_menu">
+
+    <div data-role="header">
+        <a href="#loggin" data-icon="arrow-l" data-transition="slideup">Log out</a>
+        <h1>Phrase Detectives</h1>
+        <a href="#" data-icon="gear">Settings</a>
+    </div><!-- /header -->
+
+    <div data-role="content">  
+    <div id="menu_buttons"> 
+         <div class="" id="menu_like_button"><img src="img/buttons/play_button.png" width= "50%"/></div>
+        <div data-role="controlgroup" data-type="vertical">
+        <div class="ui-grid-a">
+            <div class="ui-block-a"><img src="img/buttons/instructions_button.png" width= "100%"/> </div>
+            <div class="ui-block-b"><img src="img/buttons/scores_button.png" width= "100%"/></div>
+            <div class="ui-block-a" id="menu_padding_bottom"><img src="img/buttons/profile_button.png" width= "100%"/> </div>
+            <div class="ui-block-b" id="menu_padding_bottom"><img src="img/buttons/rate_button.png" width= "100%"/></div>
+               
+        
+        </div>
+    <div>
+    </div>
+    </div><!-- /content --> 
+
+    <div data-role="footer" data-position="fixed">        
+        
+    </div><!-- /footer -->
+
+</div><!-- /page main_menu-->
+
+
+
+
+
+
+</body>
+</html>

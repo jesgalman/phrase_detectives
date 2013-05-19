@@ -1,0 +1,39 @@
+
+
+#grid{
+	padding-top: 30px;
+}
+
+#large_button{
+	padding-top: 20px;
+	width: 600px;
+	padding-right: 20px;
+	margin-left: 20px;
+    margin-right:20px;
+}
+
+#loggin_screen{
+
+	padding-top: 60%;
+	width: 76%;
+	padding-right: 12%;
+	padding-left: 12%; 
+}
+
+#loggin_buttons{
+	text-align: center;
+}
+
+#menu_buttons{
+	padding-top: 20%;
+}
+
+#menu_padding_bottom{
+	padding-top: 5%;
+}
+
+#menu_like_button{
+	text-align: center;
+	padding-bottom: 5%;
+
+}
